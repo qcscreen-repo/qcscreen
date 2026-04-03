@@ -23,7 +23,7 @@ The codes in this repository requires **R 4.5.2** and the following R packages (
 18. ```fbi 0.7.0``` 
 19. ```quantdr 1.3.2```
 
-## simulation-code
+## Simulation-code
 This folder contains the R scripts used in the rebuttal to illustrate and partially reproduce the simulation studies reported in **Section 5.1–5.3** and **Appendices B.1, B.2, and B.4** of the paper. Generated outputs (`.csv`, `.rds`, figures, etc.) are kept under **`Results/Simulation-code`**, using the same `Part 1` / `Part 2` / `Part 3` / `Part 4` layout as here—configure the scripts’ working directory and save paths accordingly when you rerun them.
 
 - **Part 1** reproduces the simulation results in **Section 5.1** (Table 1-3) and contributes to **Appendix B.1** (Table B.1-B.3).  
@@ -48,7 +48,7 @@ This folder contains the R scripts used in the rebuttal to illustrate and partia
 4. Under the ```Part 4``` folder, the file ```FigureB1.R``` implements the simulation setup for the additional experiment in Appendix B.1.  
    - Running ```FigureB1.R``` generates the summary `.csv` file ```mean_res1_results.csv```, which is used to produce **Figure B.1**; it is kept under **`Results/Simulation-code/Part 4/`** in this layout.
 
-## simulation-demo
+## Simulation-demo
 The folder **`Simualtion-demo`** (repository root) mirrors **`Simulation-code`** only for **Part 1–Part 3**—there is **no Part 4** demo. The layout is more compact than **`Simulation-code`**: Part 1 uses one script per model family instead of many \((n,p,\alpha)\) files; Part 2 and Part 3 use a single driver each.
 
 By default **each part uses 2 replications** for illustration: **`rep <- 2`** in the Part 1 scripts, **`B <- 2`** in **`Table4.R`**, and **`nrep_total <- 2`** in **`model_3.R`**. Edit those constants to run more replications.
