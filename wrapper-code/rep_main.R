@@ -1,5 +1,5 @@
 ### Set working directory to this folder (wrapper-code) before running, e.g.
-###   setwd(".../Rebuttal/wrapper-code")
+###   setwd(".../QC-Screen/wrapper-code")
 
 ### Set any flag to FALSE to skip that block (useful when runs are long).
 run_Part1_Model1a <- TRUE
