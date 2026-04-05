@@ -17,9 +17,9 @@ run_in_dir <- function(subdir, script) {
   source(script, encoding = "UTF-8")
 }
 
-######################################
-#### Part 1: Section 5.1 / Appx B.1 ####
-######################################
+##############################################
+#### Part 1: Section 5.1 and Appendix B.1 ####
+##############################################
 if (isTRUE(run_Part1_Model1a)) {
   run_in_dir("Part 1/Model 1a", "model_1a_n_400_p_1000.R")
   run_in_dir("Part 1/Model 1a", "model_1a_n_400_p_5000.R")
@@ -38,16 +38,17 @@ if (isTRUE(run_Part1_Model1c)) {
   run_in_dir("Part 1/Model 1c", "model_1c_n_400_p_5000_alpha_075.R")
 }
 
-#################
-#### Part 2 #####
-#################
+############################
+#### Part 2 Secton 5.2 #####
+############################
+# Results in Table 4
 if (isTRUE(run_Part2_Table4)) {
   run_in_dir("Part 2", "Table4.R")
 }
 
-#################
-#### Part 3 #####
-#################
+##############################################
+#### Part 3 Section 5.3 and Appendix B.3 #####
+##############################################
 if (isTRUE(run_Part3_Model3)) {
   run_in_dir("Part 3", "model_3a_alpha_05.R")
   run_in_dir("Part 3", "model_3a_alpha_075.R")
@@ -57,9 +58,10 @@ if (isTRUE(run_Part3_Model3)) {
   run_in_dir("Part 3", "model_3c_alpha_075.R")
 }
 
-#################
-#### Part 4 #####
-#################
+##############################
+#### Part 4 Appendix B.4 #####
+##############################
+# Results in Figure B.1
 if (isTRUE(run_Part4_FigureB1)) {
   run_in_dir("Part 4", "FigureB1.R")
 }
