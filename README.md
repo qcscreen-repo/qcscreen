@@ -1,5 +1,5 @@
 # Model-free Feature Screening and False Discovery Control for High-dimensional Quantile Regressions
-This GitHub repository contains code and data to reproduce the simulation results and the real data analysis reported in the paper *Model-free Feature Screening and False Discovery Control for High-dimensional Quantile Regressions*.
+This GitHub repository contains code and data to reproduce the simulation experiments and the real data analysis results reported in the paper *Model-free Feature Screening and False Discovery Control for High-dimensional Quantile Regressions*.
 
 ## Package Environments
 The codes in this repository requires **R 4.5.2** and the following R packages (versions as used in this rebuttal):
@@ -24,7 +24,7 @@ The codes in this repository requires **R 4.5.2** and the following R packages (
 19. ```quantdr 1.3.2```
 
 ## Simulation-code
-This folder contains the R scripts used in the rebuttal to illustrate and partially reproduce the simulation studies reported in **Section 5.1–5.3** and **Appendices B.1, B.2, and B.4** of the paper. Generated outputs (`.csv`, `.rds`, figures, etc.) are kept under **`Results/Simulation-code`**, using the same `Part 1` / `Part 2` / `Part 3` / `Part 4` layout as here—configure the scripts’ working directory and save paths accordingly when you rerun them.
+This folder contains the R scripts to illustrate and reproduce the simulation experiment results reported in **Section 5.1–5.3** and **Appendices B.1, B.2, and B.4** of the paper. Generated outputs (`.csv`, `.rds`, figures, etc.) are kept under **`Results/Simulation-code`**, using the same `Part 1` / `Part 2` / `Part 3` / `Part 4` layout as here—configure the scripts’ working directory and save paths accordingly when you rerun them.
 
 - **Part 1** reproduces the simulation results in **Section 5.1** (Table 1-3) and contributes to **Appendix B.1** (Table B.1-B.3).  
 - **Part 2** reproduces the simulation results in **Section 5.2** (Table 4).  
