@@ -24,19 +24,29 @@ The codes in this repository requires **R 4.5.2** and the following R packages (
 19. ```quantdr 1.3.2```
 
 ## Simulation-code
-This folder contains the R scripts to illustrate and reproduce the simulation experiment results reported in **Section 5.1–5.3** and **Appendices B.1, B.2, and B.4** of the paper. Generated outputs (`.csv`, `.rds`, figures, etc.) are kept under **`Results/Simulation-code`**, using the same `Part 1` / `Part 2` / `Part 3` / `Part 4` layout as here—configure the scripts’ working directory and save paths accordingly when you rerun them.
+This folder contains the R scripts used to illustrate and reproduce the simulation results reported in **Sections 5.1–5.3** and **Appendices B.1, B.2, and B.4** of the paper. Generated outputs (`.csv`, `.rds`, figures, etc.) are stored under **`Results/Simulation-code`**, following the same `Part 1` / `Part 2` / `Part 3` / `Part 4` structure. When rerunning the scripts, please configure the working directory and output paths accordingly.
 
-- **Part 1** reproduces the simulation results in **Section 5.1** (Table 1-3) and contributes to **Appendix B.1** (Table B.1-B.3).  
+- **Part 1** reproduces the simulation results in **Section 5.1** (Table 1-3) and the additional simulation results in **Appendix B.1** (Table B.1-B.3).  
 - **Part 2** reproduces the simulation results in **Section 5.2** (Table 4).  
-- **Part 3** reproduces the simulation results in **Section 5.3** (Tables 5–6) and contributes to the remaining results in **Appendix B.2** (Table B.4).  
-- **Part 4** reproduces the additional simulation study reported in **Appendix B.4** (Figure B.1).
+- **Part 3** reproduces the simulation results in **Section 5.3** (Tables 5–6) and the additional simulation results in **Appendix B.2** (Table B.4).  
+- **Part 4** reproduces the additional simulation results in **Appendix B.4** (Figure B.1).
 
 1. Under the ```Part 1``` folder, there are three subfolders corresponding to different models:
    - ```Model 1a``` contains scripts such as ```model_1a_n_400_p_1000.R``` and ```model_1a_n_400_p_5000.R``` for Model 1(a) with \(n = 400\) and \(p = 1000, 5000\). Each script runs multiple signal strengths \(\alpha = 0.5, 0.75\).
    - ```Model 1b``` contains scripts such as ```model_1b_n_400_p_1000.R``` and ```model_1b_n_400_p_5000_alpha_05.R```, ```model_1b_n_400_p_5000_alpha_075.R``` for Model 1(b) with different dimensionalities and signal strengths \(\alpha = 0.5, 0.75\).
    - ```Model 1c``` contains scripts such as ```model_1c_n_400_p_1000_alpha_05.R```, ```model_1c_n_400_p_1000_alpha_075.R```, ```model_1c_n_400_p_5000_alpha_05.R``` and ```model_1c_n_400_p_5000_alpha_075.R``` for Model 1(c) with \(\alpha = 0.5, 0.75\).
-   - In the Part 1 scripts and their saved results, the key **`fs`** labels **the proposed method** (e.g. ```qc_screen_with_min_model_size``` in the code); other keys refer to benchmark methods.
+   - In the Part 1 scripts and saved results, the key **`fs`** labels **the proposed method** (e.g. ```qc_screen_with_min_model_size``` in the code); other keys refer to benchmark methods.
    - For each script, the corresponding output files (e.g. ```model1_time_n400_p1000 2.csv```, ```model1_results_n400_p1000 2.csv```, ```model2_time_n400_p5000_alpha0_75.csv```, ```model1c_results_n400_p5000_alpha0_5.csv```, etc.) record the runtime and performance metrics used in the tables and figures associated with **Section 5.1** and **Appendix B.1**; in this repository they live under **`Results/Simulation-code/Part 1/...`** (same `Model 1a` / `Model 1b` / `Model 1c` subfolders as the scripts).
+
+1. Under `Part 1`, there are three subfolders corresponding to different models:
+   - `Model 1a` contains scripts such as `model_1a_n_400_p_1000.R` and `model_1a_n_400_p_5000.R` for Model 1(a) with \(n = 400\) and \(p = 1000, 5000\). Each script runs multiple signal strengths \(\alpha = 0.5, 0.75\).
+   - `Model 1b` contains scripts such as `model_1b_n_400_p_1000.R`, `model_1b_n_400_p_5000_alpha_05.R`, and `model_1b_n_400_p_5000_alpha_075.R` for Model 1(b) under different dimensionalities and signal strengths \(\alpha = 0.5, 0.75\).
+   - `Model 1c` contains scripts such as `model_1c_n_400_p_1000_alpha_05.R`, `model_1c_n_400_p_1000_alpha_075.R`, `model_1c_n_400_p_5000_alpha_05.R`, and `model_1c_n_400_p_5000_alpha_075.R` for Model 1(c) with \(\alpha = 0.5, 0.75\).
+   - In the Part 1 scripts and saved results, the key **`fs`** denotes the proposed method (e.g., `qc_screen_with_min_model_size` in the code); other keys correspond to benchmark methods.
+   - For each script, the corresponding output files (e.g., `model1_time_n400_p1000 2.csv`, `model1_results_n400_p1000 2.csv`, `model2_time_n400_p5000_alpha0_75.csv`, `model1c_results_n400_p5000_alpha0_5.csv`) record the runtime and performance metrics used in the tables and figures for **Section 5.1** and **Appendix B.1**. In this repository, these files are stored under **`Results/Simulation-code/Part 1/...`**, using the same `Model 1a` / `Model 1b` / `Model 1c` subfolder structure.
+
+
+
 
 2. Under the ```Part 2``` folder, the file ```Table4.R``` implements the simulation setup for Section 5.2.  
    - Running ```Table4.R``` generates the summary `.csv` files ```Table4_p1000.csv``` and ```Table4_p2000.csv```, which contain the numbers reported in **Table 4** of the paper; these are stored under **`Results/Simulation-code/Part 2/`** when using the repo’s output layout.
