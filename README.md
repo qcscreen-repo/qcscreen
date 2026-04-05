@@ -1,8 +1,10 @@
 # Model-free Feature Screening and False Discovery Control for High-dimensional Quantile Regressions
-This GitHub repository contains code and data to reproduce the simulation experiments and the real data analysis results reported in the paper *Model-free Feature Screening and False Discovery Control for High-dimensional Quantile Regressions*.
+This repository provides the code and data required to reproduce the simulation studies and real-data analysis presented in the paper *Model-free Feature Screening and False Discovery Control for High-dimensional Quantile Regressions*.
+
 
 ## Package Environments
-The codes in this repository requires **R 4.5.2** and the following R packages (versions as used in this rebuttal):
+The code in this repository was developed and tested under **R 4.5.2** with the following package versions:
+
 1. ```splines``` 
 2. ```glmnet 4.1-10```
 3. ```KRLS 1.0-0```
