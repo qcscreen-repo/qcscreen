@@ -51,7 +51,7 @@ This folder contains the R scripts to illustrate and reproduce the simulation ex
 ## Simulation-demo
 The folder **`Simualtion-demo`** (repository root) mirrors **`Simulation-code`** only for **Part 1–Part 3**—there is **no Part 4** demo. The layout is more compact than **`Simulation-code`**: Part 1 uses one script per model family instead of many \((n,p,\alpha)\) files; Part 2 and Part 3 use a single driver each.
 
-By default **each part uses 2 replications** for illustration: **`rep <- 2`** in the Part 1 scripts, **`B <- 2`** in **`Table4.R`**, and **`nrep_total <- 2`** in **`model_3.R`**. Edit those constants to run more replications.
+By default **each part uses 2 replications** for illustration: **`rep <- 2`** in the Part 1 scripts, **`B <- 2`** in **`Table4.R`**, and **`nrep_total <- 2`** in **`model_3.R`**. Users can edit those parameters to change the numver of replications.
 
 1. **`Part 1/`** — subfolders **`Model 1a`**, **`Model 1b`**, **`Model 1c`** with **`model_1a.R`**, **`model_1b.R`**, **`model_1c.R`** respectively (corresponding to **`Simulation-code/Part 1`**).
 2. **`Part 2/`** — **`Table4.R`** (corresponding to **`Simulation-code/Part 2`**).
